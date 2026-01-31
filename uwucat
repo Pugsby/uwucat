@@ -1,0 +1,83 @@
+#!/bin/sh
+# uwucat - uwucat - cat but bettew in evewy way pawsibwe
+uwufy() {
+  sed -E '
+    ##### PHWASES (must come fiwst) #####
+    s/forgive me father, I have sinned/sowwy daddy~ ive been naughty/Ig
+    s/have sex with/yiff/Ig
+    s/old person/greymuzzle/Ig
+    s/whats this/OwO whats dis/Ig
+    s/you are/chu is/Ig
+
+    ##### WOWDS (wowd-boundawy safe) #####
+    s/\bahh\b/murr/Ig
+    s/\bawesome\b/pawsome/Ig
+    s/\bawful\b/pawful/Ig
+    s/\bbite\b/nom/Ig
+    s/\bbulge\b/bulgy-wulgy/Ig
+    s/\bbutthole\b/tailhole/Ig
+    s/\bbye\b/bai/Ig
+    s/\bcelebrity\b/popufur/Ig
+    s/\bcheese\b/sergal/Ig
+    s/\bchild\b/cub/Ig
+    s/\b(computer|robot|cyborg)\b/protogen/Ig
+    s/\bcum\b/cummy wummy~/Ig
+    s/\bdisease\b/pathOwOgen/Ig
+    s/\bdog\b/good boy/Ig
+    s/\bdragon\b/derg/Ig
+    s/\beat\b/vore/Ig
+    s/\bfuck\b/fluff/Ig
+    s/\bfather\b/daddy/Ig
+    s/\bfoot\b/footpaw/Ig
+    s/\bfor\b/fur/Ig
+    s/\bhand\b/paw/Ig
+    s/\bhell\b/hecc/Ig
+    s/\bhi\b/hai/Ig
+    s/\bhyena\b/yeen/Ig
+    s/\bkiss\b/lick/Ig
+    s/\blmao\b/hehe~/Ig
+    s/\blove\b/wuv/Ig
+    s/\bmouth\b/maw/Ig
+    s/\bnaughty\b/knotty/Ig
+    s/\bnot\b/knot/Ig
+    s/\bperfect\b/purrfect/Ig
+    s/\bpersona\b/fursona/Ig
+    s/\bpervert\b/furvert/Ig
+    s/\bpolice department\b/PAW Patrol/Ig
+    s/\bpolice\b/pawlice/Ig
+    s/\bporn\b/yiff/Ig
+    s/\broar\b/rawr/Ig
+    s/\bshout\b/awoo/Ig
+    s/\bsource\b/sauce/Ig
+    s/\bstraight\b/gay/Ig
+    s/\btale\b/tail/Ig
+    s/\bthe\b/teh/Ig
+    s/\bthis\b/dis/Ig
+    s/\btoe\b/toe bean/Ig
+    s/\bwhat\b/wat/Ig
+    s/\bwith\b/wif/Ig
+    s/\byou\b/chu/Ig
+    s/\byour\b/ur/Ig
+
+    ##### SYMBOWS #####
+    s/,/~/g
+    s/;/~/g
+    s/!+/ owo!/g
+    s/\?+/ uwu?/g
+    s/:\)/:3/g
+    s/:D/UwU/g
+    s/XD/X3/g
+    s/:\O/OwO/g
+
+    ##### uwu? nya~!? #####
+    s/[rl]/w/g
+    s/[RL]/W/g
+  '
+}
+
+if [ "$#" -eq 0 ]; then
+  uwufy
+else
+  cat "$@" | uwufy
+fi
+
